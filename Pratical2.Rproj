@@ -1,0 +1,9 @@
+#load the csv file 
+managers_data <-read.csv("managers.csv")
+View(managers_data)
+str(managers_data)
+
+#convert current date factored variable to date 
+managers_data$Date
+converted_date <- as.Date(managers_data$Date, format = c("%Y-%d-%m","%m/%d/%Y","%Y-%d-%m"))
+converted_date
